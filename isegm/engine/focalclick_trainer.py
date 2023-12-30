@@ -272,7 +272,7 @@ class ISTrainer(object):
                     print("Metric not saved")
 
         if ((epoch + 1) % 1 == 0) and do_save:
-            save_checkpoint(self.net, self.cfg.CHECKPOINTS_PATH, prefix=self.task_prefix, epoch=None,
+            save_checkpoint(self.net, self.cfg.CHECKPOINTS_PATH, epoch=epoch+1, prefix=self.task_prefix, epoch=None,
                             multi_gpu=self.cfg.multi_gpu, name=f"best_checkpoint")
 
         self.epoch_val_loss.append(val_loss / len(tbar))
