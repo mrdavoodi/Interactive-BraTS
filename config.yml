@@ -1,5 +1,5 @@
 INTERACTIVE_MODELS_PATH: "."
-EXPS_PATH: "./experiments"
+EXPS_PATH: "../drive/MyDrive/brats/experiments"
 
 IMAGENET_PRETRAINED_MODELS:
   GLUON_RESNET34_V1B: "./data/weights/gluon_resnet34_v1b-c6d82d59.pth"
